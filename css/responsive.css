@@ -1,0 +1,110 @@
+/* 
+    Laptop: 1200px
+    Tablet: 800px
+    Mobile: 500px
+*/
+@media screen and (max-width: 1200px) {
+    .nav-menu .menu-links li {
+        margin-bottom: 2rem;
+    }
+
+    .projects {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-menu .menu-left {
+        width: 60%;
+    }
+    .nav-menu .menu-right {
+        width: 40%;
+    }
+
+    .projects {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 3rem 0.5rem;
+    }
+
+    .projects .project {
+        width: 100%;
+    }
+
+    .cursor {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .scrollbar {
+        display: none;
+    }
+
+    nav {
+        padding: 2rem 1.5rem;
+    }
+
+    .nav-menu .menu-left, .nav-menu .menu-right {
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .nav-menu .menu-socials li {
+        margin-block: 1rem;
+    }
+
+    .landing .socials ul {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .landing .socials li {
+        padding: 1.25rem 0;
+        margin-right: 1.5rem;
+    }
+
+    .landing .bottomLine {
+        display: none;
+    }
+
+    .projects .project:hover .project-logo {
+        height: 35%;
+        width: 70%;
+    }
+
+    .projects .project:hover .project-logo * {
+        scale: 1;
+    }
+
+    .about .about-text {
+        width: 90%;
+    }
+
+    .contact {
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+
+    .contact .contact-heading {
+        margin-top: 0;
+        letter-spacing: 2px;
+    }
+
+    .contact h1 {
+        line-height: 10vw;
+    }
+
+    .contact .gif {
+        display: none;
+    }
+
+    .contact .back-to-top {
+        display: none;
+    }
+}

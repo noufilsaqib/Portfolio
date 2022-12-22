@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Page Not Found | Noufil Saqib - Creative Developer</title>
+
+    <link rel="icon" type="image/png" href="assets/logo/logo_site-icon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/wxf6als.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/global.min.css">
+    <link rel="stylesheet" href="css/404.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="nav-logo">
+            <h4 class="text-anim">noufil saqib</h4>
+        </a>
+    </nav>
+
+    <div class="wrapper">
+        <div class="header-container">
+            <div class="header">
+                <span>4</span>
+                <span>0</span>
+                <span>4</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span>Seems you are lost, come back <a href="/">home</a>.</span>
+        </div>
+    </div>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- My JS -->
+    <script src="js/global.min.js"></script>
+    <script>
+        gsap.from(".navbar", 1.6, {
+            opacity: 0,
+            y: 60,
+            ease: Expo.easeInOut,
+            delay: 2.6,
+        });
+
+        gsap.from(".header > span", 1.5, {
+            top: "-100vh",
+            ease: "bounce.out",
+            delay: 1,
+            stagger: 0.2,
+        });
+        
+        gsap.to(".footer span", 0.4, {
+            opacity: 1,
+            y: -40,
+            ease: Expo.easeInOut,
+            delay: 2.6,
+        });
+    </script>
+</body>
+</html>
