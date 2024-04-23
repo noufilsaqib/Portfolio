@@ -109,7 +109,19 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 2.5rem;
     transition: 0.2s ease-in-out;
-    margin-right: -1rem;
+}
+
+.projects .baaj-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.projects .intelliscan-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
 }
 
 .projects .project:hover .project-logo {
