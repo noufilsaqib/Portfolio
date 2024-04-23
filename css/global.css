@@ -201,7 +201,7 @@ nav {
 }
 
 .nav-menu .menu-links li {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     cursor: pointer;
 }
 
@@ -212,7 +212,7 @@ nav {
 }
 
 .nav-menu .menu-works li {
-    margin-top: 1.5rem;
+    margin-top: 0.75rem;
 }
 
 .nav-menu .menu-right {
@@ -224,7 +224,7 @@ nav {
 }
 
 .nav-menu .menu-socials li {
-    margin-block: 2rem;
+    margin-block: 1rem;
 }
 
 .nav-menu .menu-right h3 {

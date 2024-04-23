@@ -92,7 +92,7 @@ window.addEventListener('load', function () {
 
     // Typewrite effect
     var typed = new Typed(".auto-type", {
-        strings: ["Frontend", "Backend", "UI/UX", "Software"],
+        strings: ["UI/UX", "Full-Stack", "Software", "Backend", "Frontend"],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true
@@ -147,7 +147,7 @@ window.addEventListener('load', function () {
 
     const animateCursor = (e, interacting) => {
         const x = e.clientX - cursor.offsetWidth / 2,
-              y = e.clientY - cursor.offsetHeight / 2;
+            y = e.clientY - cursor.offsetHeight / 2;
 
         const keyframes = {
             transform: `translate3d(${x}px, ${y}px, 0) scale(${interacting ? 15 : 1})`,
@@ -161,7 +161,7 @@ window.addEventListener('load', function () {
 
     window.onmousemove = (e) => {
         const interactable = e.target.closest('.project'),
-              interacting = interactable !== null;
+            interacting = interactable !== null;
 
         animateCursor(e, interacting);
 

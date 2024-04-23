@@ -58,9 +58,10 @@
 .projects {
     background-color: var(--white);
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
+    padding: 4rem 0;
     cursor: none;
 }
 
@@ -71,7 +72,7 @@
     align-items: center;
     justify-content: center;
     height: 70vh;
-    width: 30%;
+    width: calc(33.33% - 2rem);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
     border-radius: 1.5rem;
 }
@@ -85,31 +86,46 @@
     background-color: var(--black);
     padding: 2rem;
     border-radius: 1.5rem;
-    transition: 0.7s ease-out;
+    transition: 0.25s ease-out;
 }
 
 .projects .treaze-logo {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1rem;
     font-size: 1.75rem;
-    transition: 0.2s ease-out;
+    transition: 0.2s ease-in-out;
+    margin-right: -1rem;
+}
+
+.projects .dogfight-logo {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1rem;
+    font-size: 1.75rem;
+    transition: 0.2s ease-in-out;
+    margin-right: -1rem;
+}
+
+.projects .kindr-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    transition: 0.2s ease-in-out;
     margin-right: -1rem;
 }
 
 .projects .project:hover .project-logo {
     height: 100%;
     width: 100%;
-    transition: 0.3s ease-in;
+    transition: 0.25s ease-in-out;
 }
 
 .projects .project:hover .project-logo * {
     scale: 1.25;
-    transition: 0.3s ease-in;
+    transition: 0.25s ease-in-out;
 }
 
 .projects img {
     height: 5rem;
-    transition: 0.2s ease-out;
+    transition: 0.25s ease-in-out;
 }
 
 .projects .project-info {
