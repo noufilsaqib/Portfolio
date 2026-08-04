@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/pixeowxb/noufilsaqib.com/test
-    - /bin/cp artifacts/portfolio/dist/public/* $DEPLOYPATH
+    - cd /home/pixeowxb/repositories/Portfolio
+    - pnpm install
+    - pnpm build
+    - /bin/cp -R artifacts/portfolio/dist/public/* $DEPLOYPATH/
