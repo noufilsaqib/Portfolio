@@ -6,8 +6,7 @@ on:
       - master
 
 jobs:
-  web-deploy:
-    name: Deploy
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -19,5 +18,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/public/
-          
+          local-dir: ./artifacts/
