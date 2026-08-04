@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Mono:wght@400;700&display=swap');
+@import 'tailwindcss';
+
+/* ── Tokens ── */
+:root {
+  --bg:       24 4% 11%;
+  --fg:       36 10% 88%;
+  --muted:    24 3% 50%;
+  --accent:   11 100% 61%;
+  --border:   24 4% 20%;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --page-px: clamp(1.25rem, 5vw, 4rem);
+  --page-py: clamp(1.25rem, 4vh, 2.5rem);
+}
+
+:root.light {
+  --bg:     40 30% 97%;
+  --fg:     24 10% 14%;
+  --muted:  24 5% 48%;
+  --accent: 11 90% 50%;
+  --border: 24 8% 82%;
+}
+
+/* ── Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: hsl(var(--bg));
+  color: hsl(var(--fg));
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ── Tailwind shims ── */
+@theme inline {
+  --color-background: hsl(var(--bg));
+  --color-foreground: hsl(var(--fg));
+  --color-muted: hsl(var(--muted));
+  --color-accent: hsl(var(--accent));
+  --color-border: hsl(var(--border));
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+/* ── Layout ── */
+.page-root {
+  min-height: 100dvh;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--page-py) var(--page-px);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  padding-bottom: 1.25rem;
+}
+
+.header-left { display: flex; flex-direction: column; gap: 0.2rem; }
+
+.name {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: hsl(var(--fg));
+}
+
+.role {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  font-size: 0.75rem;
+  color: hsl(var(--muted));
+  text-decoration: none;
+  transition: color 0.25s;
+  letter-spacing: 0.03em;
+}
+.nav-link:hover { color: hsl(var(--fg)); }
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 0.03em;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid hsl(var(--border));
+  transition: border-color 0.3s;
+}
+
+.section {
+  padding: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: hsl(var(--muted));
+  display: block;
+}
+
+.body-text {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: hsl(var(--fg) / 0.85);
+}
+
+/* ── Projects ── */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: hsl(var(--fg));
+}
+
+.project-year {
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+.project-hoverable {
+  position: relative;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  color: hsl(var(--muted));
+  transition: color 0.2s;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.github-link:hover { color: hsl(var(--fg)); }
+
+.screenshot-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  z-index: 100;
+  pointer-events: none;
+  background: hsl(var(--bg));
+  box-shadow: 0 8px 32px hsl(0 0% 0% / 0.4);
+  overflow: hidden;
+}
+
+.carousel-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.screenshot-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.project-desc {
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: hsl(var(--fg) / 0.75);
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.15rem;
+}
+
+.tag {
+  font-size: 0.68rem;
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--muted));
+  padding: 0.1rem 0.45rem;
+  transition: border-color 0.25s, color 0.25s;
+}
+.tag:hover { border-color: hsl(var(--accent)); color: hsl(var(--accent)); }
+
+/* ── Skills ── */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: 0.75rem;
+  font-size: 0.78rem;
+  align-items: baseline;
+}
+
+.skill-cat {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.skill-items {
+  color: hsl(var(--fg) / 0.85);
+  line-height: 1.5;
+}
+
+/* ── Contact ── */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* ── Link underline draw ── */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+  color: hsl(var(--fg) / 0.85);
+  width: fit-content;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: hsl(var(--accent));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.link-underline:hover { color: hsl(var(--fg)); }
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ── Footer ── */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: hsl(var(--muted));
+}
+
+.status-dot-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: hsl(var(--accent));
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+/* ── Cursor ── */
+.cursor-blink {
+  display: inline-block;
+  width: 0.5em;
+  height: 1em;
+  background: hsl(var(--accent));
+  vertical-align: text-bottom;
+  margin-left: 0.1em;
+  animation: blink 1s step-end infinite;
+}
+
+/* ── Keyframes ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted)); }
+
+/* ── Selection ── */
+::selection {
+  background: hsl(var(--accent) / 0.25);
+  color: hsl(var(--fg));
+}

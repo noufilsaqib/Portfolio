@@ -1,0 +1,57 @@
+{
+  "header": {
+    "name": "Noufil Saqib",
+    "role": "Software Developer"
+  },
+  "contact": [
+    { "label": "noufil.s@hotmail.com", "href": "mailto:noufil.s@hotmail.com" },
+    { "label": "github.com/noufilsaqib",   "href": "https://github.com/noufilsaqib" },
+    { "label": "linkedin.com/in/muhammad-noufil-saqib", "href": "https://linkedin.com/in/muhammad-noufil-saqib" }
+  ],
+  "work": [
+    {
+      "name": "Nexus Router",
+      "year": "2023",
+      "description": "High-performance edge routing for microservices. Reduced latency by 40% across distributed clusters.",
+      "stack": ["Rust", "gRPC", "Redis"]
+    },
+    {
+      "name": "Aura UI",
+      "year": "2022",
+      "description": "Accessible, unstyled React primitive library focused on keyboard navigation and screen reader support.",
+      "stack": ["React", "TypeScript", "ARIA"]
+    },
+    {
+      "name": "Vanguard Metrics",
+      "year": "2021",
+      "description": "Telemetry pipeline processing millions of events per minute with sub-second querying.",
+      "stack": ["Go", "Kafka", "ClickHouse"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "tinydb",
+      "description": "A zero-dependency, embedded key-value store in under 400 lines of Rust.",
+      "link": "https://github.com/eliasthorne/tinydb",
+      "screenshots": ["tinydb-1", "tinydb-2", "tinydb-3"]
+    },
+    {
+      "name": "promptfmt",
+      "description": "CLI tool for formatting and diffing LLM prompt templates across versions.",
+      "link": "https://github.com/eliasthorne/promptfmt",
+      "screenshots": ["promptfmt-1", "promptfmt-2", "promptfmt-3"]
+    },
+    {
+      "name": "portwatch",
+      "description": "Lightweight daemon that monitors open ports and alerts on unexpected changes.",
+      "link": "https://github.com/eliasthorne/portwatch",
+      "screenshots": ["portwatch-1", "portwatch-2", "portwatch-3"]
+    }
+  ],
+  "skills": [
+    { "category": "Languages", "items": "TypeScript · Rust · Go · Python · SQL" },
+    { "category": "Frontend",  "items": "React · Next.js · Tailwind · Framer Motion" },
+    { "category": "Backend",   "items": "Node.js · PostgreSQL · Redis · Kafka" },
+    { "category": "Infra",     "items": "Docker · Kubernetes · Terraform · CI/CD" }
+  ]
+}
