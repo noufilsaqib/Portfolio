@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pixeowxb/repositories/Portfolio
+    - /bin/cp artifacts/portfolio/dist/public/* $DEPLOYPATH
+
