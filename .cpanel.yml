@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pixeowxb/repositories/Portfolio
+    - export DEPLOYPATH=/home/pixeowxb/noufilsaqib.com/test
     - /bin/cp artifacts/portfolio/dist/public/* $DEPLOYPATH
-
