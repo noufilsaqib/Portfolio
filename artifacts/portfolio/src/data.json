@@ -32,7 +32,7 @@
     {
       "name": "tinydb",
       "description": "A zero-dependency, embedded key-value store in under 400 lines of Rust.",
-      "link": "https://github.com/eliasthorne/tinydb",
+      "link": "https://github.com/noufilsaqib",
       "screenshots": ["tinydb-1", "tinydb-2", "tinydb-3"]
     },
     {
