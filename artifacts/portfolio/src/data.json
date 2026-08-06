@@ -17,36 +17,36 @@
       "stack": ["Rust", "gRPC", "Redis"]
     },
     {
-      "name": "Aura UI",
-      "year": "2022",
+      "name": "Reva Solutions",
+      "year": "Jan 2023 - Aug 2023",
       "description": "Accessible, unstyled React primitive library focused on keyboard navigation and screen reader support.",
       "stack": ["React", "TypeScript", "ARIA"]
     },
     {
-      "name": "Vanguard Metrics",
-      "year": "2021",
+      "name": "Treaze",
+      "year": "Jan 2021 - July 2021",
       "description": "Telemetry pipeline processing millions of events per minute with sub-second querying.",
       "stack": ["Go", "Kafka", "ClickHouse"]
     }
   ],
   "projects": [
     {
-      "name": "tinydb",
+      "name": "garaage",
       "description": "A zero-dependency, embedded key-value store in under 400 lines of Rust.",
-      "link": "https://github.com/noufilsaqib",
-      "screenshots": ["tinydb-1", "tinydb-2", "tinydb-3"]
+      "link": "https://github.com/noufilsaqib/Garaage",
+      "screenshots": ["garaage-1", "garaage-2", "garaage-3"]
     },
     {
-      "name": "promptfmt",
+      "name": "baaj",
       "description": "CLI tool for formatting and diffing LLM prompt templates across versions.",
-      "link": "https://github.com/eliasthorne/promptfmt",
-      "screenshots": ["promptfmt-1", "promptfmt-2", "promptfmt-3"]
+      "link": "https://github.com/noufilsaqib/yvr-hacks-2024",
+      "screenshots": ["baaj-1", "baaj-2", "baaj-3"]
     },
     {
-      "name": "portwatch",
+      "name": "kindsettle",
       "description": "Lightweight daemon that monitors open ports and alerts on unexpected changes.",
-      "link": "https://github.com/eliasthorne/portwatch",
-      "screenshots": ["portwatch-1", "portwatch-2", "portwatch-3"]
+      "link": "https://github.com/towaquimbayo/KindSettle",
+      "screenshots": ["kindsettle-1", "kindsettle-2", "kindsettle-3"]
     }
   ],
   "skills": [

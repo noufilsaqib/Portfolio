@@ -1,20 +1,20 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring } from 'framer-motion';
-import imgTinydb1 from '@assets/screenshot-tinydb.jpg';
-import imgTinydb2 from '@assets/screenshot-tinydb-2.jpg';
-import imgTinydb3 from '@assets/screenshot-tinydb-3.jpg';
-import imgPromptfmt1 from '@assets/screenshot-promptfmt.jpg';
-import imgPromptfmt2 from '@assets/screenshot-promptfmt-2.jpg';
-import imgPromptfmt3 from '@assets/screenshot-promptfmt-3.jpg';
-import imgPortwatch1 from '@assets/screenshot-portwatch.jpg';
-import imgPortwatch2 from '@assets/screenshot-portwatch-2.jpg';
-import imgPortwatch3 from '@assets/screenshot-portwatch-3.jpg';
+import imgGaraage1 from '@assets/screenshot-garaage.jpg';
+import imgGaraage2 from '@assets/screenshot-garaage-2.jpg';
+import imgGaraage3 from '@assets/screenshot-garaage-3.jpg';
+import imgBaaj1 from '@assets/screenshot-baaj.jpg';
+import imgBaaj2 from '@assets/screenshot-baaj-2.jpg';
+import imgBaaj3 from '@assets/screenshot-baaj-3.jpg';
+import imgKindsettle1 from '@assets/screenshot-kindsettle.jpg';
+import imgKindsettle2 from '@assets/screenshot-kindsettle-2.jpg';
+import imgKindsettle3 from '@assets/screenshot-kindsettle-3.jpg';
 import data from './data.json';
 
 const imageMap: Record<string, string> = {
-  'tinydb-1': imgTinydb1, 'tinydb-2': imgTinydb2, 'tinydb-3': imgTinydb3,
-  'promptfmt-1': imgPromptfmt1, 'promptfmt-2': imgPromptfmt2, 'promptfmt-3': imgPromptfmt3,
-  'portwatch-1': imgPortwatch1, 'portwatch-2': imgPortwatch2, 'portwatch-3': imgPortwatch3,
+  'garaage-1': imgGaraage1, 'garaage-2': imgGaraage2, 'garaage-3': imgGaraage3,
+  'baaj-1': imgBaaj1, 'baaj-2': imgBaaj2, 'baaj-3': imgBaaj3,
+  'kindsettle-1': imgKindsettle1, 'kindsettle-2': imgKindsettle2, 'kindsettle-3': imgKindsettle3,
 };
 
 const GithubIcon = () => (
