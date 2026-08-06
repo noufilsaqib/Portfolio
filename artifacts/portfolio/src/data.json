@@ -1,7 +1,8 @@
 {
   "header": {
     "name": "Noufil Saqib",
-    "role": "Software Developer"
+    "role": "Software Developer",
+    "resume": "https://drive.google.com/file/d/11g4Qo16P4D5Bp89v1h-WpC9If_0uuqaG/view?usp=sharing"
   },
   "contact": [
     { "label": "noufil.s@hotmail.com", "href": "mailto:noufil.s@hotmail.com" },
@@ -10,8 +11,8 @@
   ],
   "work": [
     {
-      "name": "Nexus Router",
-      "year": "2023",
+      "name": "Reva Solutions",
+      "year": "Oct 2024 - Present",
       "description": "High-performance edge routing for microservices. Reduced latency by 40% across distributed clusters.",
       "stack": ["Rust", "gRPC", "Redis"]
     },
